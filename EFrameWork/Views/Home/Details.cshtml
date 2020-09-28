@@ -1,0 +1,37 @@
+﻿
+@model Product
+@{
+    ViewData["Title"] = "Details";
+}
+<!--Model binding-->
+<form method="post">
+    <input type="hidden" name="ProductId" id="ProductId" value="@Model.ProductId" />
+    <p>
+        <label>
+            Name:
+        </label>
+        <input asp-for="Name" />
+    </p>
+    <p>
+        <label>
+            Decscription:
+        </label>
+        <input asp-for="Description" />
+    </p>
+    <p>
+        <label>
+            Category:
+        </label>
+        <input asp-for="Category" />
+    </p>
+    <p>
+        <label>
+            Price:
+        </label>
+        <input asp-for="Price" />
+    </p>
+
+    <input type="submit" value="Details" />
+
+</form>
+
